@@ -6,3 +6,4 @@ streamlit.text('get proficient into databricks 🐔')
 streamlit.text('get certified in az900 🥑')
 streamlit.text('get certified in aws 🍞')
 
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
