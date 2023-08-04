@@ -9,5 +9,5 @@ streamlit.text('get certified in aws 🍞')
 streamlit.text('get certified in snowflake 🍞')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt')
-streamlit.text(my_fruit_list.iloc[:,3])
+streamlit.dataframe(my_fruit_list.iloc[:[2,3]])
 
