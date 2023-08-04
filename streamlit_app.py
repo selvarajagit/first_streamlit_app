@@ -9,5 +9,6 @@ streamlit.text('get certified in aws 🍞')
 streamlit.text('get certified in snowflake 🍞')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt', header=1, sep = ',', quotechar='"')
+streamlit.multiselect("Pick some fruits",'list(my_fruit_list.index),['Strawberries'])
 
 streamlit.dataframe[my_fruit_list]
