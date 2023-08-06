@@ -1,11 +1,9 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 
 df = pd.DataFrame(
-    [
-        {"command": "st.selectbox", "rating": 4, "is_widget": True},
-        {"command": "st.balloons", "rating": 5, "is_widget": False},
-        {"command": "st.time_input", "rating": 3, "is_widget": True},
-    ]
-)
+   np.random.randn(10, 5),
+   columns=('col %d' % i for i in range(5)))
+
 st.table(df)
