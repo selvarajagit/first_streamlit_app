@@ -10,14 +10,10 @@ streamlit.text('get certified in az900 🥑')
 streamlit.text('get certified in aws 🍞')
 streamlit.text('get certified in snowflake 🍞')
 streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
 my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt', header=1)
-#streamlit.dataframe[my_fruit_list]
+streamlit.dataframe(my_fruit_list)
 
-df = pd.DataFrame(
-   np.random.randn(50, 20),
-   columns=('col %d' % i for i in range(20)))
-
-streamlit.dataframe(df)  # Same as st.write(df)
 
 
 import requests
@@ -30,5 +26,4 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "kiwi")
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 
 # write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)
-
+streamlit.dataframe(fruityvice_normalized) # Same as st.write(df)
