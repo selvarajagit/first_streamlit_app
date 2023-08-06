@@ -8,5 +8,4 @@ df = pd.DataFrame(
         {"command": "st.time_input", "rating": 3, "is_widget": True},
     ]
 )
-
 st.table(df)
