@@ -18,7 +18,7 @@ import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+ "kiwi")
 
-#streamlit.text(fruityvice_response.json())
+streamlit.text(fruityvice_response.json())
 
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
