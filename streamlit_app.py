@@ -18,5 +18,5 @@ streamlit.text(fruityvice_response.json())
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)
+streamlit.dataframe[fruityvice_normalized]
 
