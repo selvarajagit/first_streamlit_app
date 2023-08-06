@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+st.title('this is first time I am learning all this')
 
 df = pd.DataFrame(
    np.random.randn(50, 20),
