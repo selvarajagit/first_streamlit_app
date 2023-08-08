@@ -38,9 +38,11 @@ my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows = my_cur.fetchall()
 streamlit.text("Fruit load list contains")
 streamlit.dataframe(my_data_rows)
+
 streamlit.text("What fruit do you like to add?")
-my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST WHERE fruit_name like '%jack%")
-my_data_row = my_cur.fetchone()
+my_cur2 = my_cnx.cursor()
+my_cur2.execute("SELECT * FROM FRUIT_LOAD_LIST WHERE fruit_name like '%jack%")
+my_data_row = my_cur2.fetchone()
 streamlit.dataframe(my_data_row)
 
 
