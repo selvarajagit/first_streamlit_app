@@ -1,9 +1,8 @@
 import streamlit
 import pandas as pd
 import numpy as np
-#import snowflake.connector
+import snowflake.connector
 
-conn = streamlit.experimental_connection('snowpark')
 
 
 streamlit.title('this is first time I am learning all this')
