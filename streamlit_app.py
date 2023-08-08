@@ -1,7 +1,7 @@
 import streamlit
 import pandas as pd
 import numpy as np
-import snowflake.connector as sc
+
 
 streamlit.title('this is first time I am learning all this')
 streamlit.header('My main goals  🥣')
