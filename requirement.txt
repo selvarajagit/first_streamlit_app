@@ -1,2 +1,0 @@
-# requirement.txt
-snowflake-snowpark-python
